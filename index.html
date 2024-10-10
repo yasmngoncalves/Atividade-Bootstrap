@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PetShop Pata Feliz</title>
+
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+
+        .carousel,
+        .carousel-item {
+            height: 90vh; 
+        }
+        .carousel-item img {
+            object-fit: cover; 
+            height: 100%;
+            width: 100%;
+        }
+    
+        .navbar-custom {
+            background-color: #4277F3;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">PetShop Pata Feliz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal: Carrossel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/dog-2.jpg" alt="Primeiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Bem-vindo ao PetShop Pata Feliz</h5>
+                <p>Seu pet merece o melhor cuidado. Conheça nossos serviços especializados.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/dog-1.jpg" alt="Segundo Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Cuidados Completos Para Seu Pet</h5>
+                <p>Desde banho e tosa até consultas veterinárias, tudo em um só lugar.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/cat-1.jpg" alt="Terceiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Serviço de Hospedagem Para Pets</h5>
+                <p>Viaje tranquilo, deixe seu pet com a gente e ele será tratado com carinho e segurança.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+
+    <!-- Seção de Serviços -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/dog-banho.jpg" alt="Banho e Tosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Banho e Tosa</h5>
+                        <p class="card-text">Serviços de banho e tosa para manter seu pet sempre limpo e cheiroso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/veterinario.jpg" alt="Consultas Veterinárias">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultas Veterinárias</h5>
+                        <p class="card-text">Consulta com veterinários experientes para garantir a saúde do seu pet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/dog-3.jpg" alt="Hospedagem para Pets">
+                    <div class="card-body">
+                        <h5 class="card-title">Hospedagem para Pets</h5>
+                        <p class="card-text">Um ambiente seguro e confortável para seu pet enquanto você viaja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-center text-white p-3 mt-4">
+        © 2024 PetShop Pata Feliz. Todos os direitos reservados.
+    </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
